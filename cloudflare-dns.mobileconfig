@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>HTTPS</string>
+				<key>ServerAddresses</key>
+				<array>
+					<string>2606:4700:4700::1111</string>
+					<string>2606:4700:4700::1001</string>
+					<string>1.1.1.1</string>
+					<string>1.0.0.1</string>
+				</array>
+				<key>ServerURL</key>
+				<string>https://cloudflare-dns.com/dns-query</string>
+			</dict>
+			<key>PayloadDescription</key>
+			<string>Configures device to use Cloudflare Encrypted DNS over HTTPS</string>
+			<key>PayloadDisplayName</key>
+			<string>Cloudflare DNS over HTTPS</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.dnsSettings.managed.14B9D3B6-DAF2-4C39-9688-F7C398FCF71D</string>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadUUID</key>
+			<string>EC369E32-BB9B-4F3C-8200-10B6F3340DA0</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>ProhibitDisablement</key>
+			<false/>
+		</dict>
+        <dict>
+            <key>Name</key>
+            <string>Cloudflare DNS over TLS</string>
+            <key>PayloadDescription</key>
+            <string>Configures device to use Cloudflare Encrypted DNS over TLS</string>
+            <key>PayloadDisplayName</key>
+            <string>Cloudflare DNS over TLS</string>
+            <key>PayloadIdentifier</key>
+            <string>com.apple.dnsSettings.managed.5642DA02-AC0F-4D0D-AB92-012C584CC665</string>
+            <key>PayloadType</key>
+            <string>com.apple.dnsSettings.managed</string>
+            <key>PayloadUUID</key>
+            <string>A725A496-EAE1-4E2B-AB44-51880DAF0E9A</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>DNSSettings</key>
+            <dict>
+                <key>DNSProtocol</key>
+                <string>TLS</string>
+                <key>ServerAddresses</key>
+                <array>
+                    <string>2606:4700:4700::1111</string>
+                    <string>2606:4700:4700::1001</string>
+                    <string>1.1.1.1</string>
+                    <string>1.0.0.1</string>
+                </array>
+                <key>ServerName</key>
+                <string>cloudflare-dns.com</string>
+            </dict>
+        </dict>
+		<dict>
+            <key>Name</key>
+            <string>Cloudflare DoT Malware</string>
+            <key>PayloadDescription</key>
+            <string>Configures device to use Cloudflare Encrypted DNS over TLS with Malware filter</string>
+            <key>PayloadDisplayName</key>
+            <string>Cloudflare DoT Malware</string>
+            <key>PayloadIdentifier</key>
+            <string>com.apple.dnsSettings.managed.b19a5a9f-ec1f-4272-9180-a360f4f7e44b</string>
+            <key>PayloadType</key>
+            <string>com.apple.dnsSettings.managed</string>
+            <key>PayloadUUID</key>
+            <string>024ad60c-fa32-4f1a-bdbf-c5bfd478d810</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>DNSSettings</key>
+            <dict>
+                <key>DNSProtocol</key>
+                <string>TLS</string>
+                <key>ServerAddresses</key>
+                <array>
+                    <string>2606:4700:4700::1112</string>
+                    <string>2606:4700:4700::1002</string>
+                    <string>1.1.1.2</string>
+                    <string>1.0.0.2</string>
+                </array>
+                <key>ServerName</key>
+                <string>cloudflare-dns.com</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Name</key>
+            <string>Cloudflare DoT Malware and Adult Content</string>
+            <key>PayloadDescription</key>
+            <string>Configures device to use Cloudflare Encrypted DNS over TLS with Malware and Adult content filter</string>
+            <key>PayloadDisplayName</key>
+            <string>Cloudflare DoT Malware/Adult</string>
+            <key>PayloadIdentifier</key>
+            <string>com.apple.dnsSettings.managed.0af4c0f3-03a5-4071-84e2-a50c0abd5e8f</string>
+            <key>PayloadType</key>
+            <string>com.apple.dnsSettings.managed</string>
+            <key>PayloadUUID</key>
+            <string>3c26e05b-80c9-405d-8f48-4953f3fde2e4</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>DNSSettings</key>
+            <dict>
+                <key>DNSProtocol</key>
+                <string>TLS</string>
+                <key>ServerAddresses</key>
+                <array>
+                    <string>2606:4700:4700::1113</string>
+                    <string>2606:4700:4700::1003</string>
+                    <string>1.1.1.3</string>
+                    <string>1.0.0.3</string>
+                </array>
+                <key>ServerName</key>
+                <string>cloudflare-dns.com</string>
+            </dict>
+        </dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>Adds the Cloudflare DNS to Big Sur and iOS 14 based systems</string>
+	<key>PayloadDisplayName</key>
+	<string>Cloudflare DNS over HTTPS and TLS</string>
+	<key>PayloadIdentifier</key>
+	<string>com.harshanand.cloudflare-dns</string>
+	<key>PayloadRemovalDisallowed</key>
+	<false/>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>0A5AAA29-F1CE-40E8-8371-A22AAF3E58D2</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>
